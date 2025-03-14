@@ -57,6 +57,9 @@ header div{
     background-color: #fff;
     width: calc(33.33% - 1rem);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card img:first-child{
@@ -66,6 +69,7 @@ header div{
 }
 
 .card p{
+    flex-grow: 1;
     padding: 0 1rem 1rem;
 }
 
