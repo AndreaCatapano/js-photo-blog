@@ -6,13 +6,20 @@
     box-sizing: border-box;
 }
 
+h1, p{
+    font-family: "Edu TAS Beginner", cursive;
+}
+
 /* GENERAL */
 
 h1{
-    font-family: "Edu TAS Beginner", cursive;
     font-weight: 600;
     font-size: 4.5rem;
     padding: 2rem;
+}
+
+body {
+    background-image: url("../img/cork.png");
 }
 
 /* UTILITY */
@@ -36,4 +43,36 @@ header div{
     text-align: center;
 }
 
+/* MAIN */
 
+#card-container{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    width: calc(33.33% - 1rem);
+    position: relative;
+}
+
+.card img:first-child{
+    width: 100%;
+    padding: 1rem;
+    object-fit: cover;
+}
+
+.card p{
+    padding: 0 1rem 1rem;
+}
+
+.pin{
+    max-width: 75px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
