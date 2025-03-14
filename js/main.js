@@ -7,9 +7,30 @@
 */
 
 const urlApi = "https://lanciweb.github.io/demo/api/pictures/";
+const parentElement = document.getElementById("card-container")
 
 axios.get(urlApi).then(response => {
-    console.log(response.data)
+    renderHTML(parentElement, response.data);
 }).catch(error => console.error(error));
 
 
+function renderHTML(parent, childArray) {
+    parent.innerHTML = "";
+    for (let i = 0; i < childArray.length; i++) {
+        let element = childArray[i];
+        let childElement = createHTML(element);
+        parent.appendChild(childElement);
+    }
+}
+
+function createHTML(member) {
+    let element = document.createElement("div");
+    element.classList.add("card");
+
+    element.innerHTML = ` 
+                <img src="${member.url}" alt="">
+                <p>${member.title}.</p>
+                <img class="pin" src="img/pin.svg" alt="">`;
+
+    return element
+}
