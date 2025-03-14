@@ -1,0 +1,34 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+
+
+
+/* UTILITY */
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+
+
+/* HEADER */
+
+header {
+    background-image: url("../img/wall.png");
+}
+
+header div{
+    height: 145px;
+    text-align: center;
+}
+
+
