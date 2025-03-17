@@ -111,7 +111,14 @@ header div{
 
 .card p{
     flex-grow: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
     padding: 0 1rem 1rem;
+}
+
+.date-card {
+    font-family: "Sometype Mono", monospace;
+    color: gray;
 }
 
 .pin{

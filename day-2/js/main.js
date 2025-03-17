@@ -11,9 +11,8 @@ let cardElements;
 axios.get(urlApi).then(response => renderHTML(parentElement, response.data)).catch(error => console.error(error));
 
 
-closeButtonElement.addEventListener("click", function () {
-    overlayElement.classList.add("d-none")
-})
+closeButtonElement.addEventListener("click", closeOverlay)
+
 
 /*
 Funzione che accetta due parametri:
@@ -57,8 +56,14 @@ function createHTML(member) {
 
     element.innerHTML = ` 
                 <img src="${member.url}" alt="">
-                <p>${member.title}.</p>
+                <p class="date-card">${member.date}</p>
+                <p>${member.title.toUpperCase()}</p>
                 <img class="pin" src="img/pin.svg" alt="">`;
 
     return element
+}
+
+
+function closeOverlay() {
+    overlayElement.classList.add("d-none")
 }
