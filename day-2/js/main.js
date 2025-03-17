@@ -1,4 +1,5 @@
 const urlApi = "https://lanciweb.github.io/demo/api/pictures/";
+const bodyElement = document.body;
 const parentElement = document.getElementById("card-container");
 const overlayElement = document.getElementById("overlay-container");
 const closeButtonElement = document.getElementById("close-button");
@@ -33,7 +34,7 @@ function renderHTML(parent, childArray) {
         parent.appendChild(childElement);
     }
 
-    cardElements = document.querySelectorAll(".card")
+    cardElements = document.querySelectorAll(".card");
 
     cardElements.forEach(card => {
         card.addEventListener("click", function () {
@@ -41,7 +42,7 @@ function renderHTML(parent, childArray) {
             if (imgElement) {
                 overlayImgElement.src = imgElement.src;
             }
-            overlayElement.classList.remove("d-none");
+            openOverlay ();
         });
     });
 }
@@ -63,7 +64,19 @@ function createHTML(member) {
     return element
 }
 
+/*
+Funzione che apre l'overlay
+*/
+function openOverlay (){
+    bodyElement.classList.add("no-scroll")
+    overlayElement.classList.remove("d-none");
+}
 
+
+/*
+Funzione che chiude l'overlay
+*/
 function closeOverlay() {
     overlayElement.classList.add("d-none")
+    bodyElement.classList.remove("no-scroll")
 }

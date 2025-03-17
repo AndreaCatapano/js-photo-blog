@@ -34,6 +34,10 @@ body {
     display: none !important;
 }
 
+.no-scroll{
+    height: 100%;
+    overflow: hidden;
+}
 /* OVERLAY */
 
 #overlay-container{
@@ -41,7 +45,7 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1;
+    z-index: 5;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -99,6 +103,18 @@ header div{
     flex-direction: column;
     justify-content: center;
     box-shadow: 1.4px 2.9px 2.9px hsl(0deg 0% 0% / 0.46);
+    transition: all ease-in-out 0.5s;
+    z-index: 1;
+}
+
+.card:hover{
+    transform: rotate(15deg) scale(1.1);
+    box-shadow: 3px 5px 5px hsl(0deg 0% 0% / 0.46);
+    z-index: 2;
+}
+
+.card:hover .pin{
+    display: none;
 }
 
 .card img:first-child{
@@ -127,6 +143,7 @@ header div{
     top: 0;
     left: 50%;
     transform: translate(-50%, -45%);
+    transition: display ease-in-out 1s;
 }
 
 
@@ -141,8 +158,12 @@ header div{
         width: 700px;
     }
 
-        .card{
+    .card{
         width: calc(50% - 1rem);
+    }
+
+    #card-container{
+        margin-bottom: 2rem;
     }
 }
 

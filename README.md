@@ -8,7 +8,7 @@
 - ### Milestone 2
 
   - Testiamo una chiamata a questo endpoint: https://lanciweb.github.io/demo/api/pictures/
-  -Studiamo bene la risposta e i dati che ci fornisce iniziando a pensare a come poterli sfruttare.
+  - Studiamo bene la risposta e i dati che ci fornisce iniziando a pensare a come poterli sfruttare.
 
 
 - ### Milestone 3
@@ -51,3 +51,4 @@
 - Utilizzo di axios per effettuare una chiamata AJAX all'API 
 - Scelto di NON utilizzare bootstrap per il tipo di approccio (desktop first)
 - Per la box-shadow della classe "card" utilizzato: https://www.joshwcomeau.com/css/designing-shadows/ 
+- Bonus no scroll: https://stackoverflow.com/questions/28411499/disable-scrolling-on-body
