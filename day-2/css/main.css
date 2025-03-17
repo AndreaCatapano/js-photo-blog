@@ -103,7 +103,7 @@ header div{
     flex-direction: column;
     justify-content: center;
     box-shadow: 1.4px 2.9px 2.9px hsl(0deg 0% 0% / 0.46);
-    transition: all ease-in-out 0.5s;
+    transition: transform ease-in-out 0.5s;
     z-index: 1;
 }
 
