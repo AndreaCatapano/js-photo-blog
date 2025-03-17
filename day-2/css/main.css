@@ -33,6 +33,9 @@ body {
     margin: 0 auto;
 }
 
+.d-none {
+    display: none !important;
+}
 
 /* OVERLAY */
 
@@ -55,6 +58,7 @@ body {
     margin-top: 2rem;
     padding: 1rem 1.2rem;
     max-width: 80px;
+    text-align: center;
 }
 
 #overlay-container div{
@@ -67,7 +71,6 @@ body {
     max-height: 100%;
     max-width: 100%;
 }
-
 
 
 /* HEADER */
