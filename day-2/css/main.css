@@ -10,9 +10,6 @@ h1, p{
     font-family: "Edu TAS Beginner", cursive;
 }
 
-button{
-    font-family: "Sometype Mono", monospace;
-}
 
 /* GENERAL */
 
@@ -57,8 +54,8 @@ body {
 #close-button{
     margin-top: 2rem;
     padding: 1rem 1.2rem;
-    max-width: 80px;
     text-align: center;
+    display: inline-block;
 }
 
 #overlay-container div{
@@ -116,8 +113,10 @@ header div{
     padding: 0 1rem 1rem;
 }
 
-.date-card {
+.card .date-card {
     font-family: "Sometype Mono", monospace;
+    font-size: 1rem;
+    font-weight: 400;
     color: gray;
 }
 
