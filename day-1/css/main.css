@@ -92,15 +92,17 @@ header div{
     .container{
         width: 700px;
     }
+
+        .card{
+        width: calc(50% - 1rem);
+    }
 }
 
 @media screen and (max-width: 768px) {
     .container{
         width: 500px;
     }
-    .card{
-        width: calc(50% - 1rem);
-    }
+
 }
 
 @media screen and (max-width: 576px) {
