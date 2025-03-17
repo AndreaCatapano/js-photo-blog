@@ -98,6 +98,7 @@ header div{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 1.4px 2.9px 2.9px hsl(0deg 0% 0% / 0.46);
 }
 
 .card img:first-child{
