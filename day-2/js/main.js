@@ -9,7 +9,9 @@ let cardElements;
 
 
 // Chiamata all'endpoint urlAPI alla risposta invoca la funzione renderHTML
-axios.get(urlApi).then(response => renderHTML(parentElement, response.data)).catch(error => console.error(error));
+axios.get(urlApi)
+.then(response => renderHTML(parentElement, response.data))
+.catch(error => console.error(error));
 
 
 closeButtonElement.addEventListener("click", closeOverlay)

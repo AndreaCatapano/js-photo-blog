@@ -147,6 +147,9 @@ header div{
 }
 
 
+/* Media Queries */
+
+
 @media screen and (max-width: 1200px) {
     .container{
         width: 940px;
