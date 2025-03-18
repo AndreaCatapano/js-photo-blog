@@ -43,6 +43,7 @@ function renderHTML(parent, childArray) {
             let imgElement = card.querySelector("img");
             if (imgElement) {
                 overlayImgElement.src = imgElement.src;
+                overlayImgElement.alt = imgElement.alt;
             }
             openOverlay ();
         });
@@ -58,7 +59,7 @@ function createHTML(member) {
     element.classList.add("card");
 
     element.innerHTML = ` 
-                <img src="${member.url}" alt="">
+                <img src="${member.url}" alt="${member.title}">
                 <p class="date-card">${member.date}</p>
                 <p>${member.title.toUpperCase()}</p>
                 <img class="pin" src="img/pin.svg" alt="">`;
